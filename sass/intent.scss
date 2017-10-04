@@ -1,0 +1,111 @@
+// Intent
+//
+// A minimalistic CSS framework with intention.
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$white: #FFF;
+$black: #000;
+
+// Colors from Microsoft Fluent Design
+// https://docs.microsoft.com/en-us/windows/uwp/style/color
+$blue: #0078D7;
+$dark-blue: #0063B1;
+$red: #E74856;
+$dark-red: #E81123;
+$yellow: #FFB900;
+$dark-yellow: #FF8C00;
+$green: #00CC6A;
+$dark-green: #10893E;
+$cyan: #00B294;
+$dark-cyan: #018574;
+$purple: #881798;
+$dark-purple: #9A0089;
+
+$grey-text: #333;
+$grey-shadow: rgba(76, 74, 72, 0.5);
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $grey-text;
+  font-weight: $font-weight-regular;
+  padding: 0 1em;
+
+  :focus {
+    outline: none;
+  }
+
+   ::-moz-focus-inner {
+    border: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: $font-weight-medium;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .primary {
+    background-color: $blue;
+    color: $white;
+  }
+
+  .primary-alt {
+    background-color: $white;
+    color: $blue;
+  }
+
+  .success {
+    background-color: $green;
+    color: $white;
+  }
+
+  .success-alt {
+    background-color: $white;
+    color: $green;
+  }
+
+  .danger {
+    background-color: $red;
+    color: $white;
+  }
+
+  .danger-alt {
+    background-color: $white;
+    color: $red;
+  }
+
+  .warning {
+    background-color: $yellow;
+    color: $white;
+  }
+
+  .warning-alt {
+    background-color: $white;
+    color: $yellow;
+  }
+
+  button {
+    border-radius: 0.5ex;
+    border: none;
+    box-shadow: 0 0.2ex 0.5ex $grey-shadow;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: $font-weight-medium;
+    padding: 1.2ex 1.8ex;
+    text-transform: uppercase;
+    transition: all 0.1s ease;
+    letter-spacing: 0.05ex;
+  }
+
+  button:hover {
+    box-shadow: 0 0.3ex 1ex $grey-shadow;
+    transform: translateY(-1px);
+  }
+}
