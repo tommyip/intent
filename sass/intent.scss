@@ -42,70 +42,53 @@ body {
     border: 0;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: $font-weight-medium;
-  }
+}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-medium;
+}
 
-  .primary {
-    background-color: $blue;
-    color: $white;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  .primary-alt {
-    background-color: $white;
-    color: $blue;
-  }
+@mixin color-scheme($color) {
+  background-color: $color;
+  color: $white;
+}
 
-  .success {
-    background-color: $green;
-    color: $white;
-  }
+@mixin color-scheme-alt($color) {
+  background-color: $white;
+  color: $color;
+}
 
-  .success-alt {
-    background-color: $white;
-    color: $green;
-  }
+.primary { @include color-scheme($blue); }
+.primary-alt { @include color-scheme-alt($blue) }
 
-  .danger {
-    background-color: $red;
-    color: $white;
-  }
+.success { @include color-scheme($green); }
+.success-alt { @include color-scheme-alt($green); }
 
-  .danger-alt {
-    background-color: $white;
-    color: $red;
-  }
+.danger { @include color-scheme($red); }
+.danger-alt { @include color-scheme-alt($red); }
 
-  .warning {
-    background-color: $yellow;
-    color: $white;
-  }
+.warning { @include color-scheme($yellow); }
+.warning-alt { @include color-scheme-alt($yellow); }
 
-  .warning-alt {
-    background-color: $white;
-    color: $yellow;
-  }
+button {
+  border-radius: 0.5ex;
+  border: none;
+  box-shadow: 0 0.2ex 0.5ex $grey-shadow;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: $font-weight-medium;
+  padding: 1.2ex 1.8ex;
+  text-transform: uppercase;
+  transition: all 0.1s ease;
+  letter-spacing: 0.05ex;
+}
 
-  button {
-    border-radius: 0.5ex;
-    border: none;
-    box-shadow: 0 0.2ex 0.5ex $grey-shadow;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: $font-weight-medium;
-    padding: 1.2ex 1.8ex;
-    text-transform: uppercase;
-    transition: all 0.1s ease;
-    letter-spacing: 0.05ex;
-  }
-
-  button:hover {
-    box-shadow: 0 0.3ex 1ex $grey-shadow;
-    transform: translateY(-1px);
-  }
+button:hover {
+  box-shadow: 0 0.3ex 1ex $grey-shadow;
+  transform: translateY(-1px);
 }

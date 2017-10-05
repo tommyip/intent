@@ -8,48 +8,61 @@ body {
     outline: none; }
   body ::-moz-focus-inner {
     border: 0; }
-  body h1, body h2, body h3, body h4, body h5, body h6 {
-    font-weight: 500; }
-  body a {
-    text-decoration: none;
-    color: inherit; }
-  body .primary {
-    background-color: #0078D7;
-    color: #FFF; }
-  body .primary-alt {
-    background-color: #FFF;
-    color: #0078D7; }
-  body .success {
-    background-color: #00CC6A;
-    color: #FFF; }
-  body .success-alt {
-    background-color: #FFF;
-    color: #00CC6A; }
-  body .danger {
-    background-color: #E74856;
-    color: #FFF; }
-  body .danger-alt {
-    background-color: #FFF;
-    color: #E74856; }
-  body .warning {
-    background-color: #FFB900;
-    color: #FFF; }
-  body .warning-alt {
-    background-color: #FFF;
-    color: #FFB900; }
-  body button {
-    border-radius: 0.5ex;
-    border: none;
-    box-shadow: 0 0.2ex 0.5ex rgba(76, 74, 72, 0.5);
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 500;
-    padding: 1.2ex 1.8ex;
-    text-transform: uppercase;
-    transition: all 0.1s ease;
-    letter-spacing: 0.05ex; }
-  body button:hover {
-    box-shadow: 0 0.3ex 1ex rgba(76, 74, 72, 0.5);
-    transform: translateY(-1px); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.primary {
+  background-color: #0078D7;
+  color: #FFF; }
+
+.primary-alt {
+  background-color: #FFF;
+  color: #0078D7; }
+
+.success {
+  background-color: #00CC6A;
+  color: #FFF; }
+
+.success-alt {
+  background-color: #FFF;
+  color: #00CC6A; }
+
+.danger {
+  background-color: #E74856;
+  color: #FFF; }
+
+.danger-alt {
+  background-color: #FFF;
+  color: #E74856; }
+
+.warning {
+  background-color: #FFB900;
+  color: #FFF; }
+
+.warning-alt {
+  background-color: #FFF;
+  color: #FFB900; }
+
+button {
+  margin: 0.5em 0;
+  border-radius: 0.5ex;
+  border: none;
+  box-shadow: 0 0.2ex 0.5ex rgba(76, 74, 72, 0.5);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  padding: 1.2ex 1.8ex;
+  text-transform: uppercase;
+  transition: all 0.1s ease;
+  letter-spacing: 0.05ex; }
+
+button:hover {
+  box-shadow: 0 0.3ex 1ex rgba(76, 74, 72, 0.5);
+  transform: translateY(-1px); }
 
 /*# sourceMappingURL=intent.css.map */
