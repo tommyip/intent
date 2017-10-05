@@ -75,20 +75,4 @@ a {
 .warning { @include color-scheme($yellow); }
 .warning-alt { @include color-scheme-alt($yellow); }
 
-button {
-  border-radius: 0.5ex;
-  border: none;
-  box-shadow: 0 0.2ex 0.5ex $grey-shadow;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: $font-weight-medium;
-  padding: 1.2ex 1.8ex;
-  text-transform: uppercase;
-  transition: all 0.1s ease;
-  letter-spacing: 0.05ex;
-}
-
-button:hover {
-  box-shadow: 0 0.3ex 1ex $grey-shadow;
-  transform: translateY(-1px);
-}
+@import 'buttons';
