@@ -1,20 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-  font-weight: 400;
-  padding: 0 1em; }
-  body :focus {
-    outline: none; }
-  body ::-moz-focus-inner {
-    border: 0; }
+.dark {
+  background-color: #333;
+  color: #FFF; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 500; }
-
-a {
-  text-decoration: none;
-  color: inherit; }
+.dark-alt {
+  background-color: #FFF;
+  color: #333; }
 
 .primary {
   background-color: #0078D7;
@@ -48,20 +39,37 @@ a {
   background-color: #FFF;
   color: #FFB900; }
 
-button {
-  margin: 0.5em 0;
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-weight: 400;
+  padding: 0 1em; }
+  body :focus {
+    outline: none; }
+  body ::-moz-focus-inner {
+    border: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500; }
+
+a {
+  text-decoration: none;
+  color: #018574; }
+
+.btn {
   border-radius: 0.5ex;
   border: none;
   box-shadow: 0 0.2ex 0.5ex rgba(76, 74, 72, 0.5);
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
+  letter-spacing: 0.05ex;
+  margin: 0.5em 0;
   padding: 1.2ex 1.8ex;
   text-transform: uppercase;
-  transition: all 0.1s ease;
-  letter-spacing: 0.05ex; }
+  transition: all 0.1s ease; }
 
-button:hover {
+.btn:hover {
   box-shadow: 0 0.3ex 1ex rgba(76, 74, 72, 0.5);
   transform: translateY(-1px); }
 

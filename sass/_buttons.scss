@@ -1,18 +1,18 @@
-button {
-  margin: 0.5em 0;
+.btn {
   border-radius: 0.5ex;
   border: none;
   box-shadow: 0 0.2ex 0.5ex $grey-shadow;
   cursor: pointer;
   display: inline-block;
   font-weight: $font-weight-medium;
+  letter-spacing: 0.05ex;
+  margin: 0.5em 0;
   padding: 1.2ex 1.8ex;
   text-transform: uppercase;
   transition: all 0.1s ease;
-  letter-spacing: 0.05ex;
 }
 
-button:hover {
+.btn:hover {
   box-shadow: 0 0.3ex 1ex $grey-shadow;
   transform: translateY(-1px);
 }

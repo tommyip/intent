@@ -1,0 +1,24 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $grey-text;
+  font-weight: $font-weight-regular;
+  padding: 0 1em;
+
+  :focus {
+    outline: none;
+  }
+
+   ::-moz-focus-inner {
+    border: 0;
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-medium;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-cyan;
+}

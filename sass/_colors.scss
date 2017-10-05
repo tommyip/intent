@@ -1,0 +1,45 @@
+$white: #FFF;
+$black: #000;
+
+// Colors from Microsoft Fluent Design
+// https://docs.microsoft.com/en-us/windows/uwp/style/color
+$blue: #0078D7;
+$dark-blue: #0063B1;
+$red: #E74856;
+$dark-red: #E81123;
+$yellow: #FFB900;
+$dark-yellow: #FF8C00;
+$green: #00CC6A;
+$dark-green: #10893E;
+$cyan: #00B294;
+$dark-cyan: #018574;
+$purple: #C239B3;
+$dark-purple: #9A0089;
+
+$grey-text: #333;
+$grey-shadow: rgba(76, 74, 72, 0.5);
+
+@mixin color-scheme($color) {
+  background-color: $color;
+  color: $white;
+}
+
+@mixin color-scheme-alt($color) {
+  background-color: $white;
+  color: $color;
+}
+
+.dark { @include color-scheme($grey-text); }
+.dark-alt { @include color-scheme-alt($grey-text); }
+
+.primary { @include color-scheme($blue); }
+.primary-alt { @include color-scheme-alt($blue) }
+
+.success { @include color-scheme($green); }
+.success-alt { @include color-scheme-alt($green); }
+
+.danger { @include color-scheme($red); }
+.danger-alt { @include color-scheme-alt($red); }
+
+.warning { @include color-scheme($yellow); }
+.warning-alt { @include color-scheme-alt($yellow); }
