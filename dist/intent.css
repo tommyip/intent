@@ -55,6 +55,9 @@ h1, h2, h3, h4, h5, h6 {
 a {
   display: inline-block;
   text-decoration: none;
+  color: #333; }
+
+.link {
   color: #00B294;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -62,32 +65,41 @@ a {
   background-size: 200% 100%;
   background-position: 100%; }
 
-a:hover {
+.link:hover {
   transition: all 0.2s ease-out;
   background-position: 0%; }
 
-.btn, a.btn {
+.btn {
   border-radius: 0.5ex;
   border: none;
-  box-shadow: 0 0.2ex 0.5ex rgba(76, 74, 72, 0.5);
+  box-shadow: 0 0.2ex 0.5ex rgba(76, 74, 72, 0.4);
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
   letter-spacing: 0.05ex;
-  margin: 0.5em 0;
+  margin: 0.5em;
   padding: 1.2ex 1.8ex;
   text-transform: uppercase;
   transition: all 0.1s linear; }
 
 .btn:hover {
-  box-shadow: 0 0.3ex 1ex rgba(76, 74, 72, 0.5);
+  box-shadow: 0 0.3ex 1ex rgba(76, 74, 72, 0.4);
   transform: translateY(-1px); }
 
-a.btn {
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: unset;
-  background-image: unset;
-  background-size: unset;
-  background-position: unset; }
+.card {
+  border-radius: 0.5ex;
+  box-shadow: 0 1ex 2.5ex rgba(76, 74, 72, 0.4);
+  padding: 2.5em;
+  transition: all 0.1s linear; }
+  .card .card-title {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 0.05ex;
+    text-transform: uppercase; }
+
+.card:hover {
+  box-shadow: 0 1.1ex 2.6ex rgba(76, 74, 72, 0.4);
+  transform: translateY(-1px); }
 
 /*# sourceMappingURL=intent.css.map */

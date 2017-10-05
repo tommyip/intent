@@ -17,7 +17,7 @@ $purple: #C239B3;
 $dark-purple: #9A0089;
 
 $grey-text: #333;
-$grey-shadow: rgba(76, 74, 72, 0.5);
+$grey-shadow: rgba(76, 74, 72, 0.4);
 
 @mixin color-scheme($color) {
   background-color: $color;

@@ -1,0 +1,19 @@
+.card {
+  border-radius: 0.5ex;
+  box-shadow: 0 1ex 2.5ex $grey-shadow;
+  padding: 2.5em;
+  transition: all 0.1s linear;
+
+  .card-title {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: $font-weight-medium;
+    letter-spacing: 0.05ex;
+    text-transform: uppercase;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 1.1ex 2.6ex $grey-shadow;
+  transform: translateY(-1px);
+}
