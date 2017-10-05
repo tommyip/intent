@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
-.dark {
-  background-color: #333;
-  color: #FFF; }
-
-.dark-alt {
-  background-color: #FFF;
-  color: #333; }
-
 .primary {
   background-color: #0078D7;
   color: #FFF; }
@@ -39,6 +31,14 @@
   background-color: #FFF;
   color: #FFB900; }
 
+.dark {
+  background-color: #333;
+  color: #FFF; }
+
+.dark-alt {
+  background-color: #FFF;
+  color: #333; }
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #333;
@@ -53,10 +53,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500; }
 
 a {
+  display: inline-block;
   text-decoration: none;
-  color: #018574; }
+  color: #00B294;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #018574, #018574 50%, #00B294 50%);
+  background-size: 200% 100%;
+  background-position: 100%; }
 
-.btn {
+a:hover {
+  transition: all 0.2s ease-out;
+  background-position: 0%; }
+
+.btn, a.btn {
   border-radius: 0.5ex;
   border: none;
   box-shadow: 0 0.2ex 0.5ex rgba(76, 74, 72, 0.5);
@@ -67,10 +77,17 @@ a {
   margin: 0.5em 0;
   padding: 1.2ex 1.8ex;
   text-transform: uppercase;
-  transition: all 0.1s ease; }
+  transition: all 0.1s linear; }
 
 .btn:hover {
   box-shadow: 0 0.3ex 1ex rgba(76, 74, 72, 0.5);
   transform: translateY(-1px); }
+
+a.btn {
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-image: unset;
+  background-size: unset;
+  background-position: unset; }
 
 /*# sourceMappingURL=intent.css.map */

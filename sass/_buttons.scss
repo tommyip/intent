@@ -9,10 +9,21 @@
   margin: 0.5em 0;
   padding: 1.2ex 1.8ex;
   text-transform: uppercase;
-  transition: all 0.1s ease;
+  transition: all 0.1s linear;
 }
 
 .btn:hover {
   box-shadow: 0 0.3ex 1ex $grey-shadow;
   transform: translateY(-1px);
+}
+
+a.btn {
+  // Remove animation associated with an anchor tag
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-image: unset;
+  background-size: unset;
+  background-position: unset;
+
+  @extend .btn;
 }
