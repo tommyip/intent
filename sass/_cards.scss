@@ -5,10 +5,10 @@
   transition: all 0.1s linear;
 
   .card-title {
-    margin-bottom: 1em;
     font-size: 1.2em;
-    font-weight: $font-weight-medium;
-    letter-spacing: 0.05ex;
+    margin-bottom: 0.5em;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.06ex;
     text-transform: uppercase;
   }
 }

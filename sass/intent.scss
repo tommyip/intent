@@ -2,12 +2,13 @@
 //
 // A minimalist UI components library with intention
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-$font-weight-regular: 400;
-$font-weight-medium: 500;
-$font-weight-bold: 700;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+$font-weight-light: 300;
+$font-weight-medium: 400;
+$font-weight-bold: 500;
 
 @import 'colors';
 @import 'common';
+@import 'grid';
 @import 'buttons';
 @import 'cards';

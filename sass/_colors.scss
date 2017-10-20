@@ -42,4 +42,3 @@ $grey-shadow: rgba(76, 74, 72, 0.4);
 .warning-alt { @include color-scheme-alt($yellow); }
 
 .dark { @include color-scheme($grey-text); }
-.dark-alt { @include color-scheme-alt($grey-text); }

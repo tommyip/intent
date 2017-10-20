@@ -1,12 +1,16 @@
+button {
+  background-color: initial;
+}
+
 .btn {
   border-radius: 0.5ex;
   border: none;
   box-shadow: 0 0.2ex 0.5ex $grey-shadow;
   cursor: pointer;
   display: inline-block;
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-bold;
   letter-spacing: 0.05ex;
-  margin: 0.5em;
+  margin: 1ex;
   padding: 1.2ex 1.8ex;
   text-transform: uppercase;
   transition: all 0.1s linear;
