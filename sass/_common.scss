@@ -3,7 +3,23 @@ body {
   color: $grey-text;
   font-weight: $font-weight-medium;
   font-size: 16px;
-  padding: 1em;
+  padding-top: 1.5em;
+
+  // Base case (Mobile)
+  margin-left: 1em;
+  margin-right: 1em;
+
+  // Tablet & expensive phones
+  @media (min-width: 640px) {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  // Desktop & very expensive phones
+  @media (min-width: 1080px) {
+    margin-left: 11em;
+    margin-right: 11em;
+  }
 
   :focus {
     outline: none;

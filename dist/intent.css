@@ -40,7 +40,17 @@ body {
   color: #333;
   font-weight: 400;
   font-size: 16px;
-  padding: 1em; }
+  padding-top: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em; }
+  @media (min-width: 640px) {
+    body {
+      margin-left: 1.5em;
+      margin-right: 1.5em; } }
+  @media (min-width: 1080px) {
+    body {
+      margin-left: 11em;
+      margin-right: 11em; } }
   body :focus {
     outline: none; }
   body ::-moz-focus-inner {
