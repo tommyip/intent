@@ -9,7 +9,6 @@ body {
   color: $grey-text;
   font-weight: $font-weight-medium;
   font-size: 16px;
-  //padding-top: 1.5em;
 
   // Base case (Mobile)
   margin-left: 1em;
@@ -39,9 +38,9 @@ body {
 // Only 4 headings style since h5 and h6 is going to be similar in size as
 // normal text, we might as well drop it entirely.
 h1, h2, h3, h4 {
+  margin: 0;
   font-weight: $font-weight-light;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 h1 {

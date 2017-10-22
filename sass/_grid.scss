@@ -1,12 +1,97 @@
+// This grid system is based on the awesome flexboxgrid.css
+// https://github.com/kristoferjoseph/flexboxgrid
 .container {
-  margin: 0;
-
   .row {
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 
-    .column {
+    .col {
       flex: 1;
     }
+
+    .col-1 {
+      flex-basis: 8.333333%;
+      max-width: 8.333333%;
+    }
+
+    .col-2 {
+      flex-basis: 16.666667%;
+      max-width: 16.666667%;
+    }
+
+    .col-3 {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+
+    .col-4 {
+      flex-basis: 33.333333%;
+      max-width: 33.333333%;
+    }
+
+    .col-5 {
+      flex-basis: 41.666667%;
+      max-width: 41.666667%;
+    }
+
+    .col-6 {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    .col-7 {
+      flex-basis: 58.333333%;
+      max-width: 58.333333%;
+    }
+
+    .col-8 {
+      flex-basis: 66.666667%;
+      max-width: 66.666667%;
+    }
+
+    .col-9 {
+      flex-basis: 75%;
+      max-width: 75%;
+    }
+
+    .col-10 {
+      flex-basis: 83.333333%;
+      max-width: 83.333333%;
+    }
+
+    .col-11 {
+      flex-basis: 91.666667%;
+      max-width: 91.666667%;
+    }
+
+    .col-12 {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .start {
+    justify-content: flex-start;
+  }
+
+  .center {
+    justify-content: center;
+  }
+
+  .end {
+    justify-content: flex-end;
+  }
+
+  .top {
+    align-items: flex-start;
+  }
+
+  .middle {
+    align-items: center;
+  }
+
+  .bottom {
+    align-items: flex-end;
   }
 }

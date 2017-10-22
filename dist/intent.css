@@ -60,9 +60,9 @@ body {
     border: 0; }
 
 h1, h2, h3, h4 {
+  margin: 0;
   font-weight: 300;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em; }
+  padding-bottom: 0.5em; }
 
 h1 {
   font-size: 2.5em; }
@@ -94,13 +94,60 @@ a {
   transition: all 0.2s ease-out;
   background-position: 0%; }
 
-.container {
-  margin: 0; }
-  .container .row {
-    display: flex;
-    justify-content: space-between; }
-    .container .row .column {
-      flex: 1; }
+.container .row {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; }
+  .container .row .col {
+    flex: 1; }
+  .container .row .col-1 {
+    flex-basis: 8.333333%;
+    max-width: 8.333333%; }
+  .container .row .col-2 {
+    flex-basis: 16.666667%;
+    max-width: 16.666667%; }
+  .container .row .col-3 {
+    flex-basis: 25%;
+    max-width: 25%; }
+  .container .row .col-4 {
+    flex-basis: 33.333333%;
+    max-width: 33.333333%; }
+  .container .row .col-5 {
+    flex-basis: 41.666667%;
+    max-width: 41.666667%; }
+  .container .row .col-6 {
+    flex-basis: 50%;
+    max-width: 50%; }
+  .container .row .col-7 {
+    flex-basis: 58.333333%;
+    max-width: 58.333333%; }
+  .container .row .col-8 {
+    flex-basis: 66.666667%;
+    max-width: 66.666667%; }
+  .container .row .col-9 {
+    flex-basis: 75%;
+    max-width: 75%; }
+  .container .row .col-10 {
+    flex-basis: 83.333333%;
+    max-width: 83.333333%; }
+  .container .row .col-11 {
+    flex-basis: 91.666667%;
+    max-width: 91.666667%; }
+  .container .row .col-12 {
+    flex-basis: 100%;
+    max-width: 100%; }
+.container .start {
+  justify-content: flex-start; }
+.container .center {
+  justify-content: center; }
+.container .end {
+  justify-content: flex-end; }
+.container .top {
+  align-items: flex-start; }
+.container .middle {
+  align-items: center; }
+.container .bottom {
+  align-items: flex-end; }
 
 button {
   background-color: initial; }

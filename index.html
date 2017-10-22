@@ -8,13 +8,22 @@
 </head>
 
 <body>
-  <h1>Intent</h1>
-  <h2>A minimalist UI components library with intention</h2>
+  <div class="container">
+    <h1 class="row center">Intent</h1>
+    <h4 class="row center">
+      A minimalist UI components library with intention.
+    </h4>
+    <div class="row center">
+      <a class="btn primary" href="https://github.com/tommyip/intent">Github repo</a>
+    </div>
+  </div>
+
+  <h2>Why it's awesome</h2>
   <p>
-    Inspired by the design of Stripe.com, <a href="https://stripe.com"
-    class="link">Stripe.com</a> is a minimalistic UI components library where
-    every design detail is intentional. Providing the user a fluid UX while
-    retaining total creative control for the developers.
+    Inspired by the design of <a href="https://stripe.com"
+    class="link">Stripe.com</a>, <i>Intent</i> is a minimalist UI components
+    library where each shape and colour is intentional. The design is aim to
+    convey information to the user without distraction.
   </p>
 
   <h2>Typography</h2>
@@ -31,26 +40,36 @@
   <h3>Navbar</h3>
   <div class="container">
     <div class="row">
-      <div class="column"><a href="#buttons" class="link">Buttons</a></div>
-      <div class="column"><a href="#cards" class="link">Cards</a></div>
-
+      <a href="#buttons" class="link col">Buttons</a>
+      <a href="#cards" class="link col">Cards</a>
     </div>
   </div>
 
   <h3 id="buttons">Buttons</h3>
-  <button class="btn">btn</button>
-  <button class="btn dark">btn dark</button>
-  <button class="btn primary"><b></b>btn primary</button>
-  <button class="btn primary-alt">btn primary-alt</button>
-  <button class="btn success">btn success</button>
-  <button class="btn success-alt">btn success-alt</button>
-  <button class="btn danger">btn danger</button>
-  <button class="btn danger-alt">btn danger-alt</button>
-  <button class="btn warning">btn warning</button>
-  <button class="btn warning-alt">btn warning-alt</button>
+
+  <div class="container">
+    Intent includes the following pixel perfect buttons, with each color
+    conveying a particular meaning.
+    <div class="row start middle">
+      <button class="btn primary"><b></b>btn primary</button>
+      <button class="btn success">btn success</button>
+      <button class="btn danger">btn danger</button>
+      <button class="btn warning">btn warning</button>
+      <button class="btn dark">btn dark</button>
+    </div>
+
+    And the following should be use as complementary buttons.
+    <div class="row start middle">
+      <button class="btn primary-alt">btn primary-alt</button>
+      <button class="btn success-alt">btn success-alt</button>
+      <button class="btn danger-alt">btn danger-alt</button>
+      <button class="btn warning-alt">btn warning-alt</button>
+      <button class="btn">btn</button>
+    </div>
+  </div>
 
   <h3 id="cards">Cards</h3>
-  <a href="https://github.com/tommyip/intent">
+  <a href="#">
     <div class="card">
       <div class="card-title danger-alt">
         Minimalist UI components library
