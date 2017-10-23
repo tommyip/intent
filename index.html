@@ -5,6 +5,7 @@
   <title>Intent</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <link rel="stylesheet" href="dist/intent.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,46 +15,64 @@
       A minimalist UI components library with intention.
     </h4>
     <div class="row center">
-      <a class="btn primary" href="https://github.com/tommyip/intent">Github repo</a>
+      <a class="btn primary" href="https://github.com/tommyip/intent">
+        Github repo
+      </a>
     </div>
-  </div>
 
-  <h2>Why it's awesome</h2>
-  <p>
-    Inspired by the design of <a href="https://stripe.com"
-    class="link">Stripe.com</a>, <i>Intent</i> is a minimalist UI components
-    library where each shape and colour is intentional. The design is aim to
-    convey information to the user without distraction.
-  </p>
 
-  <h2>Typography</h2>
-  The base font size is set to 16px, all other elements are relatively sized
-  using the `ex` or `em` units. Noticed that this library does not include
-  styles for h5 and h6 tags, we believe nesting more than 4 levels increase the
-  cognitive load on the user. Intent uses the font family
-  <a href="https://fonts.google.com/specimen/Roboto">Roboto</a> and includes
-  three font weights, 300, 400 and 500.
+    <h2>Why it's awesome</h2>
+    <p>
+      Inspired by the design of
+      <a href="https://stripe.com" class="link">Stripe.com</a>,
+      <i>Intent</i> is a minimalist UI components library where each shape and
+      colour is intentional. The design is aim to convey information to the
+      user without distraction.
+    </p>
 
-  <h1>Heading 1 (2.5em)</h1>
-  <h2>Heading 2 (1.8em)</h2>
-  <h3>Heading 3 (1.5em)</h3>
-  <h4>Heading 4 (1.3em)</h4>
+    <h2>Typography</h2>
+    The base font size is set to 16px, all other elements are relatively sized
+    using the `ex` or `em` units. Noticed that this library does not include
+    styles for h5 and h6 tags, we believe nesting more than 4 levels increase
+    the cognitive load on the user. Intent uses the font family
+    <a href="https://fonts.google.com/specimen/Roboto">Roboto</a> and includes
+    three font weights, 300, 400 and 500.
 
-  <h2>Navbar</h2>
-  <div class="container">
+    <h1>Heading 1 (2.5em)</h1>
+    <h2>Heading 2 (1.8em)</h2>
+    <h3>Heading 3 (1.5em)</h3>
+    <h4>Heading 4 (1.3em)</h4>
+
+    <h2>Grid</h2>
+    The grid system is based on the awesome Flexboxgrid.
+
+    <div id="grid-showcase">
+      <div class="row middle center">
+        <div class="col-1 col1">col-1</div>
+        <div class="col-11 col11">col-11</div>
+      </div>
+      <div class="row middle center">
+        <div class="col-4 col4">col-4</div>
+        <div class="col-8 col8">col-8</div>
+      </div>
+      <div class="row middle center">
+        <div class="col col6">col</div>
+        <div class="col col6">col</div>
+      </div>
+    </div>
+
+    <h2>Navbar</h2>
     <div class="row">
       <a href="#buttons" class="link col">Buttons</a>
       <a href="#cards" class="link col">Cards</a>
     </div>
-  </div>
 
-  <h2 id="buttons">Buttons</h2>
-
-  <div class="container">
+    <h2 id="buttons">Buttons</h2>
     Intent includes the following pixel perfect buttons, with each color
     conveying a particular meaning.
     <div class="row start middle">
-      <button class="btn primary"><b></b>btn primary</button>
+      <button class="btn primary">
+        <b></b>btn primary</button>
       <button class="btn success">btn success</button>
       <button class="btn danger">btn danger</button>
       <button class="btn warning">btn warning</button>
@@ -68,10 +87,8 @@
       <button class="btn warning-alt">btn warning-alt</button>
       <button class="btn">btn</button>
     </div>
-  </div>
 
-  <h2 id="cards">Cards</h2>
-  <div class="container">
+    <h2 id="cards">Cards</h2>
     <div class="row">
       <div class="col card">
         <div class="card-title danger-alt">
@@ -89,18 +106,17 @@
         tempor incididunt ut labore et dolore magna aliqua.
       </div>
     </div>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.
+    </p>
   </div>
-
-
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-    est laborum.
-  </p>
 </body>
 
 </html>

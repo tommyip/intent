@@ -43,17 +43,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #374046;
   font-weight: 400;
-  font-size: 16px;
-  margin-left: 1em;
-  margin-right: 1em; }
-  @media (min-width: 640px) {
-    body {
-      margin-left: 1.5em;
-      margin-right: 1.5em; } }
-  @media (min-width: 1080px) {
-    body {
-      margin-left: 15em;
-      margin-right: 15em; } }
+  font-size: 16px; }
   body :focus {
     outline: none; }
   body ::-moz-focus-inner {
@@ -94,60 +84,72 @@ a {
   transition: all 0.2s ease-out;
   background-position: 0%; }
 
-.container .row {
+.base-container .row, .container .row {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap; }
-  .container .row .col {
+  .base-container .row .col, .container .row .col {
     flex: 1; }
-  .container .row .col-1 {
+  .base-container .row .col-1, .container .row .col-1 {
     flex-basis: 8.333333%;
     max-width: 8.333333%; }
-  .container .row .col-2 {
+  .base-container .row .col-2, .container .row .col-2 {
     flex-basis: 16.666667%;
     max-width: 16.666667%; }
-  .container .row .col-3 {
+  .base-container .row .col-3, .container .row .col-3 {
     flex-basis: 25%;
     max-width: 25%; }
-  .container .row .col-4 {
+  .base-container .row .col-4, .container .row .col-4 {
     flex-basis: 33.333333%;
     max-width: 33.333333%; }
-  .container .row .col-5 {
+  .base-container .row .col-5, .container .row .col-5 {
     flex-basis: 41.666667%;
     max-width: 41.666667%; }
-  .container .row .col-6 {
+  .base-container .row .col-6, .container .row .col-6 {
     flex-basis: 50%;
     max-width: 50%; }
-  .container .row .col-7 {
+  .base-container .row .col-7, .container .row .col-7 {
     flex-basis: 58.333333%;
     max-width: 58.333333%; }
-  .container .row .col-8 {
+  .base-container .row .col-8, .container .row .col-8 {
     flex-basis: 66.666667%;
     max-width: 66.666667%; }
-  .container .row .col-9 {
+  .base-container .row .col-9, .container .row .col-9 {
     flex-basis: 75%;
     max-width: 75%; }
-  .container .row .col-10 {
+  .base-container .row .col-10, .container .row .col-10 {
     flex-basis: 83.333333%;
     max-width: 83.333333%; }
-  .container .row .col-11 {
+  .base-container .row .col-11, .container .row .col-11 {
     flex-basis: 91.666667%;
     max-width: 91.666667%; }
-  .container .row .col-12 {
+  .base-container .row .col-12, .container .row .col-12 {
     flex-basis: 100%;
     max-width: 100%; }
-.container .start {
+.base-container .start, .container .start {
   justify-content: flex-start; }
-.container .center {
+.base-container .center, .container .center {
   justify-content: center; }
-.container .end {
+.base-container .end, .container .end {
   justify-content: flex-end; }
-.container .top {
+.base-container .top, .container .top {
   align-items: flex-start; }
-.container .middle {
+.base-container .middle, .container .middle {
   align-items: center; }
-.container .bottom {
+.base-container .bottom, .container .bottom {
   align-items: flex-end; }
+
+.container {
+  margin-left: 1em;
+  margin-right: 1em; }
+  @media (min-width: 768px) {
+    .container {
+      margin-left: 1.5em;
+      margin-right: 1.5em; } }
+  @media (min-width: 1080px) {
+    .container {
+      margin-left: 15em;
+      margin-right: 15em; } }
 
 button {
   background-color: initial; }

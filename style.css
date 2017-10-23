@@ -1,0 +1,56 @@
+/* Additional styling for index */
+
+#grid-showcase > div > div {
+  color: white;
+  height: 1.5em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.col1 {
+  background-color: #F44336;
+}
+
+.col2 {
+  background-color: #E91E63;
+}
+
+.col3 {
+  background-color: #9C27B0;
+}
+
+.col4 {
+  background-color: #673AB7;
+}
+
+.col5 {
+  background-color: #3F51B5;
+}
+
+.col6 {
+  background-color: #2196F3;
+}
+
+.col7 {
+  background-color: #009688;
+}
+
+.col8 {
+  background-color: #4CAF50;
+}
+
+.col9 {
+  background-color: #CDDC39;
+}
+
+.col10 {
+  background-color: #FF9800;
+}
+
+.col11 {
+  background-color: #FF5722;
+}
+
+.col12 {
+  background-color: #607F8B;
+}

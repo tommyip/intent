@@ -1,6 +1,7 @@
 // This grid system is based on the awesome flexboxgrid.css
 // https://github.com/kristoferjoseph/flexboxgrid
-.container {
+
+.base-container {
   .row {
     box-sizing: border-box;
     display: flex;
@@ -94,4 +95,25 @@
   .bottom {
     align-items: flex-end;
   }
+}
+
+.container {
+  // Base case (Mobile)
+  margin-left: 1em;
+  margin-right: 1em;
+
+  // Tablet
+  @media (min-width: 768px) {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  // Desktop
+  // Believe it or not my phones has a higher resolution than my laptop...
+  @media (min-width: 1080px) {
+    margin-left: 15em;
+    margin-right: 15em;
+  }
+
+  @extend .base-container;
 }

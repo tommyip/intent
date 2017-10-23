@@ -10,22 +10,6 @@ body {
   font-weight: $font-weight-medium;
   font-size: 16px;
 
-  // Base case (Mobile)
-  margin-left: 1em;
-  margin-right: 1em;
-
-  // Tablet & expensive phones
-  @media (min-width: 640px) {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-  }
-
-  // Desktop & very expensive phones
-  @media (min-width: 1080px) {
-    margin-left: 15em;
-    margin-right: 15em;
-  }
-
   :focus {
     outline: none;
   }
