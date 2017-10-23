@@ -32,7 +32,7 @@
   color: #FFB900; }
 
 .dark {
-  background-color: #333;
+  background-color: #374046;
   color: #FFF; }
 
 * {
@@ -41,7 +41,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #333;
+  color: #374046;
   font-weight: 400;
   font-size: 16px;
   margin-left: 1em;
@@ -52,8 +52,8 @@ body {
       margin-right: 1.5em; } }
   @media (min-width: 1080px) {
     body {
-      margin-left: 11em;
-      margin-right: 11em; } }
+      margin-left: 15em;
+      margin-right: 15em; } }
   body :focus {
     outline: none; }
   body ::-moz-focus-inner {
@@ -79,7 +79,7 @@ h4 {
 a {
   display: inline-block;
   text-decoration: none;
-  color: #333; }
+  color: #374046; }
 
 .link {
   color: #00B294;

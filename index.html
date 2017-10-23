@@ -28,16 +28,18 @@
 
   <h2>Typography</h2>
   The base font size is set to 16px, all other elements are relatively sized
-  using the `ex` or `em` units. Noticed that h5 and h6 are not styled since we
-  believe that you should never use them; they are so similar in size with
-  normal text that it is hard for the user to differentiate them.
+  using the `ex` or `em` units. Noticed that this library does not include
+  styles for h5 and h6 tags, we believe nesting more than 4 levels increase the
+  cognitive load on the user. Intent uses the font family
+  <a href="https://fonts.google.com/specimen/Roboto">Roboto</a> and includes
+  three font weights, 300, 400 and 500.
 
   <h1>Heading 1 (2.5em)</h1>
   <h2>Heading 2 (1.8em)</h2>
   <h3>Heading 3 (1.5em)</h3>
   <h4>Heading 4 (1.3em)</h4>
 
-  <h3>Navbar</h3>
+  <h2>Navbar</h2>
   <div class="container">
     <div class="row">
       <a href="#buttons" class="link col">Buttons</a>
@@ -45,7 +47,7 @@
     </div>
   </div>
 
-  <h3 id="buttons">Buttons</h3>
+  <h2 id="buttons">Buttons</h2>
 
   <div class="container">
     Intent includes the following pixel perfect buttons, with each color
@@ -68,16 +70,27 @@
     </div>
   </div>
 
-  <h3 id="cards">Cards</h3>
-  <a href="#">
-    <div class="card">
-      <div class="card-title danger-alt">
-        Minimalist UI components library
+  <h2 id="cards">Cards</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col card">
+        <div class="card-title danger-alt">
+          Card 1 title
+        </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
       </div>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+      <div class="col-1"></div>
+      <div class="col card">
+        <div class="card-title primary-alt">
+          Card 2 title
+        </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </div>
     </div>
-  </a>
+  </div>
+
 
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
