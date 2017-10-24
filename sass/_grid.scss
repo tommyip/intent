@@ -18,26 +18,39 @@
 // limitations under the License.
 // ~~~~~~~~~~~~~~~
 
+$c-margin-xs: 1em;
+$cf-margin-xs: 1em;
+$c-margin-sm: 2em;
+$cf-margin-sm: 2em;
+$c-margin-md: 5em;
+$cf-margin-md: 2em;
+$c-margin-lg: 8em;
+$cf-margin-lg: 2em;
+
 $gutter-width: 1em;
-$outer-margin: 2em;
 $half-gutter-width: $gutter-width / 2;
 $gutter-compensation: $half-gutter-width * -1;
 
 $sm-min: 48em;
 $md-min: 64em;
 $lg-min: 75em;
-$container-sm: $sm-min + $gutter-width;
-$container-md: $md-min + $gutter-width;
-$container-lg: $lg-min + $gutter-width;
+$container-sm: $sm-min - ($c-margin-sm * 2) + $gutter-width;
+$container-md: $md-min - ($c-margin-md * 2) + $gutter-width;
+$container-lg: $lg-min - ($c-margin-lg * 2) + $gutter-width;
 
-.container-fluid, .container {
+.container, .container-fluid {
   margin-left: auto;
   margin-right: auto;
 }
 
+.container {
+  padding-left: $c-margin-xs;
+  padding-right: $c-margin-xs;
+}
+
 .container-fluid {
-  padding-left: $outer-margin;
-  padding-right: $outer-margin;
+  padding-left: $cf-margin-xs;
+  padding-right: $cf-margin-xs;
 }
 
 .row {
@@ -253,6 +266,11 @@ $container-lg: $lg-min + $gutter-width;
     width: $container-sm;
   }
 
+  .container-fluid {
+    padding-left: $cf-margin-sm;
+    padding-right: $cf-margin-sm;
+  }
+
   .col-sm,
   .col-sm-1,
   .col-sm-2,
@@ -448,6 +466,11 @@ $container-lg: $lg-min + $gutter-width;
     width: $container-md;
   }
 
+  .container-fluid {
+    padding-left: $cf-margin-md;
+    padding-right: $cf-margin-md;
+  }
+
   .col-md,
   .col-md-1,
   .col-md-2,
@@ -641,6 +664,11 @@ $container-lg: $lg-min + $gutter-width;
 @media only screen and (min-width: $lg-min) {
   .container {
     width: $container-lg;
+  }
+
+  .container-fluid {
+    padding-left: $cf-margin-lg;
+    padding-right: $cf-margin-lg;
   }
 
   .col-lg,

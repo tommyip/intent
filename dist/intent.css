@@ -84,13 +84,17 @@ a {
   transition: all 0.2s ease-out;
   background-position: 0%; }
 
-.container-fluid, .container {
+.container, .container-fluid {
   margin-left: auto;
   margin-right: auto; }
 
+.container {
+  padding-left: 1em;
+  padding-right: 1em; }
+
 .container-fluid {
-  padding-left: 2em;
-  padding-right: 2em; }
+  padding-left: 1em;
+  padding-right: 1em; }
 
 .row {
   box-sizing: border-box;
@@ -263,7 +267,11 @@ a {
 
 @media only screen and (min-width: 48em) {
   .container {
-    width: 49em; }
+    width: 45em; }
+
+  .container-fluid {
+    padding-left: 2em;
+    padding-right: 2em; }
 
   .col-sm,
   .col-sm-1,
@@ -419,7 +427,11 @@ a {
     order: 1; } }
 @media only screen and (min-width: 64em) {
   .container {
-    width: 65em; }
+    width: 55em; }
+
+  .container-fluid {
+    padding-left: 2em;
+    padding-right: 2em; }
 
   .col-md,
   .col-md-1,
@@ -575,7 +587,11 @@ a {
     order: 1; } }
 @media only screen and (min-width: 75em) {
   .container {
-    width: 76em; }
+    width: 60em; }
+
+  .container-fluid {
+    padding-left: 2em;
+    padding-right: 2em; }
 
   .col-lg,
   .col-lg-1,

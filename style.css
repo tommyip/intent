@@ -2,55 +2,8 @@
 
 #grid-showcase > div > div > div {
   color: white;
-  height: 2em;
+  height: 1em;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
-}
-
-.col1 > div {
-  background-color: #F44336;
-}
-
-.col2 > div {
-  background-color: #E91E63;
-}
-
-.col3 > div {
-  background-color: #9C27B0;
-}
-
-.col4 > div {
-  background-color: #673AB7;
-}
-
-.col5 > div {
-  background-color: #3F51B5;
-}
-
-.col6 > div {
-  background-color: #2196F3;
-}
-
-.col7 > div {
-  background-color: #009688;
-}
-
-.col8 > div {
-  background-color: #4CAF50;
-}
-
-.col9 > div {
-  background-color: #CDDC39;
-}
-
-.col10 > div {
-  background-color: #FF9800;
-}
-
-.col11 > div {
-  background-color: #FF5722;
-}
-
-.col12 > div {
-  background-color: #607F8B;
+  background-color: #E74856;
 }
