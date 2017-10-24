@@ -84,72 +84,126 @@ a {
   transition: all 0.2s ease-out;
   background-position: 0%; }
 
-.base-container .row, .container .row {
+.container-fluid, .container {
+  margin-left: auto;
+  margin-right: auto; }
+
+.container-fluid {
+  padding-left: 2em;
+  padding-right: 2em; }
+
+@media (min-width: 30em) {
+  .container {
+    width: 31em; } }
+@media (min-width: 48em) {
+  .container {
+    width: 49em; } }
+@media (min-width: 64em) {
+  .container {
+    width: 65em; } }
+.row {
   box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap; }
-  .base-container .row .col, .container .row .col {
-    flex: 1; }
-  .base-container .row .col-1, .container .row .col-1 {
-    flex-basis: 8.333333%;
-    max-width: 8.333333%; }
-  .base-container .row .col-2, .container .row .col-2 {
-    flex-basis: 16.666667%;
-    max-width: 16.666667%; }
-  .base-container .row .col-3, .container .row .col-3 {
-    flex-basis: 25%;
-    max-width: 25%; }
-  .base-container .row .col-4, .container .row .col-4 {
-    flex-basis: 33.333333%;
-    max-width: 33.333333%; }
-  .base-container .row .col-5, .container .row .col-5 {
-    flex-basis: 41.666667%;
-    max-width: 41.666667%; }
-  .base-container .row .col-6, .container .row .col-6 {
-    flex-basis: 50%;
-    max-width: 50%; }
-  .base-container .row .col-7, .container .row .col-7 {
-    flex-basis: 58.333333%;
-    max-width: 58.333333%; }
-  .base-container .row .col-8, .container .row .col-8 {
-    flex-basis: 66.666667%;
-    max-width: 66.666667%; }
-  .base-container .row .col-9, .container .row .col-9 {
-    flex-basis: 75%;
-    max-width: 75%; }
-  .base-container .row .col-10, .container .row .col-10 {
-    flex-basis: 83.333333%;
-    max-width: 83.333333%; }
-  .base-container .row .col-11, .container .row .col-11 {
-    flex-basis: 91.666667%;
-    max-width: 91.666667%; }
-  .base-container .row .col-12, .container .row .col-12 {
-    flex-basis: 100%;
-    max-width: 100%; }
-.base-container .start, .container .start {
-  justify-content: flex-start; }
-.base-container .center, .container .center {
-  justify-content: center; }
-.base-container .end, .container .end {
-  justify-content: flex-end; }
-.base-container .top, .container .top {
+  flex-wrap: wrap;
+  margin-left: -0.5em;
+  margin-right: -0.5em; }
+
+.raw-col,
+.col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em; }
+
+.col {
+  flex: 1; }
+
+.col-1 {
+  flex-basis: 8.333333%;
+  max-width: 8.333333%; }
+
+.col-2 {
+  flex-basis: 16.666667%;
+  max-width: 16.666667%; }
+
+.col-3 {
+  flex-basis: 25%;
+  max-width: 25%; }
+
+.col-4 {
+  flex-basis: 33.333333%;
+  max-width: 33.333333%; }
+
+.col-5 {
+  flex-basis: 41.666667%;
+  max-width: 41.666667%; }
+
+.col-6 {
+  flex-basis: 50%;
+  max-width: 50%; }
+
+.col-7 {
+  flex-basis: 58.333333%;
+  max-width: 58.333333%; }
+
+.col-8 {
+  flex-basis: 66.666667%;
+  max-width: 66.666667%; }
+
+.col-9 {
+  flex-basis: 75%;
+  max-width: 75%; }
+
+.col-10 {
+  flex-basis: 83.333333%;
+  max-width: 83.333333%; }
+
+.col-11 {
+  flex-basis: 91.666667%;
+  max-width: 91.666667%; }
+
+.col-12 {
+  flex-basis: 100%;
+  max-width: 100%; }
+
+.start {
+  justify-content: flex-start;
+  text-align: start; }
+
+.center {
+  justify-content: center;
+  text-align: center; }
+
+.end {
+  justify-content: flex-end;
+  text-align: end; }
+
+.top {
   align-items: flex-start; }
-.base-container .middle, .container .middle {
+
+.middle {
   align-items: center; }
-.base-container .bottom, .container .bottom {
+
+.bottom {
   align-items: flex-end; }
 
-.container {
-  margin-left: 1em;
-  margin-right: 1em; }
-  @media (min-width: 768px) {
-    .container {
-      margin-left: 1.5em;
-      margin-right: 1.5em; } }
-  @media (min-width: 1080px) {
-    .container {
-      margin-left: 15em;
-      margin-right: 15em; } }
+.around {
+  justify-content: space-around; }
+
+.between {
+  justify-content: space-around; }
 
 button {
   background-color: initial; }
