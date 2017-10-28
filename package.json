@@ -1,0 +1,15 @@
+{
+  "name": "intent",
+  "version": "0.0.1",
+  "description": "Minimalist UI component library",
+  "main": "index.js",
+  "repository": "https://github.com/tommyip/intent.git",
+  "author": "Tommy Ip <hkmp7tommy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "include-media": "^1.4.9"
+  },
+  "scripts": {
+    "watch": "sass --watch sass:dist"
+  }
+}
