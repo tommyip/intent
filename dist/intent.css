@@ -72,17 +72,11 @@ a {
   color: #374046; }
 
 .link {
-  color: #00B294;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, #018574, #018574 50%, #00B294 50%);
-  background-size: 200% 100%;
-  background-position: 100%; }
+  color: #0277BD;
+  transition: color 0.1s ease; }
 
 .link:hover {
-  transition: all 0.2s ease-out;
-  background-position: 0%; }
+  color: #0D47A1; }
 
 section {
   margin-top: 1em;
