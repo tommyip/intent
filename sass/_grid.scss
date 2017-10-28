@@ -38,6 +38,8 @@ $container-sm: $sm-min - ($c-margin-sm * 2) + $gutter-width;
 $container-md: $md-min - ($c-margin-md * 2) + $gutter-width;
 $container-lg: $lg-min - ($c-margin-lg * 2) + $gutter-width;
 
+$breakpoints: (sm: $sm-min, md: $md-min, lg: $lg-min);
+
 .container, .container-fluid {
   margin-left: auto;
   margin-right: auto;
@@ -261,7 +263,7 @@ $container-lg: $lg-min - ($c-margin-lg * 2) + $gutter-width;
   order: 1;
 }
 
-@media only screen and (min-width: $sm-min) {
+@include media(">=sm") {
   .container {
     width: $container-sm;
   }
@@ -461,7 +463,7 @@ $container-lg: $lg-min - ($c-margin-lg * 2) + $gutter-width;
   }
 }
 
-@media only screen and (min-width: $md-min) {
+@include media(">=md") {
   .container {
     width: $container-md;
   }
@@ -661,7 +663,7 @@ $container-lg: $lg-min - ($c-margin-lg * 2) + $gutter-width;
   }
 }
 
-@media only screen and (min-width: $lg-min) {
+@include media(">=lg") {
   .container {
     width: $container-lg;
   }

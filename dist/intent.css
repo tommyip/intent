@@ -263,7 +263,7 @@ section {
 .last-xs {
   order: 1; }
 
-@media only screen and (min-width: 48em) {
+@media (min-width: 48em) {
   .container {
     width: 45em; }
 
@@ -423,7 +423,7 @@ section {
 
   .last-sm {
     order: 1; } }
-@media only screen and (min-width: 64em) {
+@media (min-width: 64em) {
   .container {
     width: 55em; }
 
@@ -583,7 +583,7 @@ section {
 
   .last-md {
     order: 1; } }
-@media only screen and (min-width: 75em) {
+@media (min-width: 75em) {
   .container {
     width: 60em; }
 

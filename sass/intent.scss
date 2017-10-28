@@ -7,6 +7,7 @@ $font-weight-light: 300;
 $font-weight-medium: 400;
 $font-weight-bold: 500;
 
+@import '../node_modules/include-media/dist/include-media';
 @import 'colors';
 @import 'common';
 @import 'grid';
