@@ -743,6 +743,39 @@ section {
 
   .last-lg {
     order: 1; } }
+nav {
+  height: 3.5em;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between; }
+
+.nav-primary {
+  display: flex;
+  justify-content: center; }
+
+.nav-secondary {
+  display: flex; }
+
+@media (min-width: 64em) {
+  .nav-brand {
+    flex: 1; }
+
+  .nav-primary {
+    flex: 2; }
+    .nav-primary .nav-link {
+      text-align: center;
+      margin-left: 1.5em;
+      margin-right: 1.5em; }
+
+  .nav-secondary {
+    flex: 1;
+    justify-content: flex-end; }
+    .nav-secondary .nav-link {
+      text-align: right;
+      margin-left: 3em; } }
 button {
   background-color: initial; }
 

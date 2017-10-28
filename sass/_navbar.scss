@@ -1,0 +1,63 @@
+nav {
+  // border: 1px solid black;
+  height: 3.5em;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  // border: 1px dotted blue;
+}
+
+.nav-primary {
+  // border: 1px dotted green;
+
+  display: flex;
+  justify-content: center;
+}
+
+.nav-secondary {
+  //border: 1px dotted brown;
+
+  display: flex;
+}
+
+.nav-link {
+
+}
+
+@include media(">=sm") {
+
+}
+
+// Same styling for md and lg since you should keep the number of items in your
+// navbar as little as possible.
+@include media(">=md") {
+  .nav-brand {
+    flex: 1;
+  }
+
+  .nav-primary {
+    flex: 2;
+
+    .nav-link {
+      text-align: center;
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+    }
+  }
+
+  .nav-secondary {
+    flex: 1;
+    justify-content: flex-end;
+
+    .nav-link {
+      text-align: right;
+      margin-left: 3em;
+    }
+  }
+}
